@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Calculadora</title>
+</head>
+
+<body>
+<br>
+<br>
+<h3 style="text-align: center;">Calculadora de VAR y TIR</h3>
+<br>
+<br>
+<form action="/calcular" method="POST">
+<div class="container mb-5">   
+        <div class="row">
+        
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        
+                            <label><b>Datos para el Flujo Neto Efectivo</b></label>
+                            <div class="form-group">
+                                <label>Ingreso</label>
+                                <input type="text" name="ingreso" placeholder="0 a 9000000" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Porcentaje Incremento</label>
+                                <input type="text" name="porcentaje_incremento" placeholder="0.00 a 1.00" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Costo de Produccion</label>
+                                <input type="text" name="costo_produccion" placeholder="0 a 9000000" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>costo de Administraccion</label>
+                                <input type="text" name="costo_administraccion" placeholder="0 a 9000000" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>costo de Ventas</label>
+                                <input type="text" name="costo_mantenimiento" placeholder="0 a 9000000" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Depreciacion</label>
+                                <input type="text" name="depreciacion" placeholder="0 a 9000000" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Porcentaje de Impuesto</label>
+                                <input type="text" name="impuesto" placeholder="0.00 a 1.00" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Cantidad de Años</label>
+                                <input type="text" name="anios" placeholder="0 a 9000000" class="form-control"required>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <label><b>Datos para calcular el VAN y TIR</b></label>
+                            <div class="form-group">
+                                <label>Inversion Inicial</label>
+                                <input type="text" name="inversion_inicial" placeholder="0 a 9000000" class="form-control"required>
+                            </div>
+                            <div class="form-group">
+                                <label>Valor TMAR</label>
+                                <input type="text" name="TMAR" placeholder="0.00 a 1.00" class="form-control"required>
+                            </div>
+                            <div class="form-group">
+                                <label>Valor Salvamento</label>
+                                <input type="text" name="valor_salvamento" placeholder="0 a 9000000" class="form-control"required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Calcular</button>
+                        
+                    </div>
+                </div>
+            </div>
+        
+
+    
+        </div> 
+</div>
+    </form>
+
+    
+</body>
+</html>
